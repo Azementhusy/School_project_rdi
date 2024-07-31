@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RDI Survey</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/main.css"
+</head>
+
+<body>
+    <button class="back-button" onclick="goBack()" aria-label="Go back">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-left">
+          <line x1="19" y1="12" x2="5" y2="12"></line>
+          <polyline points="12 19 5 12 12 5"></polyline>
+      </svg>
+    </button>
+ 
+
+ 
+    <div class="header questionBar">
+        <h1>Are you answering the questionnaire as a...?</h1>
+    </div>
+
+
+    <div class="options">
+
+        <div class="option" >
+            <img src="./images/personself.png" alt="Person Icon" class="hover-image">
+            <p>Person living now or in the past (e.g., rare cancer survivor) with a rare disease</p>
+        </div>
+
+        <div class="option" >
+            <img src="./images/assistant.png" alt="Family Icon" class="hover-image">
+            <p>Family member of someone living with a rare disease</p>
+        </div>
+    </div>
+
+    <button class="next-button" onclick="goToNextPage()">Next</button>
+
+
+
+</body>
+
+
+<script>
+    function goBack() {
+      window.location.href = 'splash3.html';
+    }
+
+    function goToNextPage() {
+        window.location.href = 'agequestion.html';
+    }
+
+    document.querySelectorAll('.hover-image').forEach(image => {
+    image.addEventListener('click', function() {
+        this.classList.toggle('selected'); 
+    });
+});
+
+
+
+</script>
