@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Rating</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        
+        <div class="question">
+            In general, how would you rate your health today?
+        </div>
+        <button class="accessibility-btn">
+            <img src="3.png" alt="Accessibility">
+        </button>
+        <div class="whole">
+            <div class="rating">
+                <input type="radio" id="excellent" name="rating" value="1" checked>
+                <label for="excellent" class="emoji">😁</label>
+                <input type="radio" id="good" name="rating" value="2">
+                <label for="good" class="emoji">😊</label>
+                <input type="radio" id="fair" name="rating" value="3">
+                <label for="fair" class="emoji">🙂</label>
+                <input type="radio" id="poor" name="rating" value="4">
+                <label for="poor" class="emoji">😐</label>
+                <input type="radio" id="bad" name="rating" value="5">
+                <label for="bad" class="emoji">😟</label>
+            </div>
+            <div class="slider">
+                <div class="slider-bar"></div>
+                <div class="slider-thumb"></div>
+            </div>
+            <div class="slider-labels">
+                <span>Excellent</span>
+                <span>Good</span>
+                <span>Fair</span>
+                <span>Poor</span>
+                <span>Bad</span>
+            </div>
+        </div>
+        <div class="controls">
+            <button class="audio-btn">
+                <img src="1.png" alt="Audio">
+            </button>
+            <button class="mic-btn">
+                <img src="2.png" alt="Mic">       
+            <button class="next-btn">Next</button>
+        </div>
+    </div>
+
+    <!-- Accessibility Menu -->
+    <div class="accessibility-menu" id="accessibility-menu">
+        <button id="increase-font">A+</button>
+        <button id="decrease-font">A-</button>
+        <button id="increase-contrast">Contrast +</button>
+        <button id="decrease-contrast">Contrast -</button>
+        <button id="toggle-grayscale">Greyscale</button>
+        <button id="translate-ga">Gaeilge</button>
+        <button id="translate-es">español</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

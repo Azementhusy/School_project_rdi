@@ -1,0 +1,186 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.732);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 1000px;
+    height: 500px;
+}
+
+
+.question {
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 40px 110px;
+    font-size: 40px;
+    width: 700px;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid;
+    padding: 10px;
+    box-shadow: 4px 4px 4px 4px;
+}
+
+.whole {
+    width: 700px;
+    margin-left: 130px;
+    margin-top: 50px;
+}
+
+.rating {
+    display: flex;
+    justify-content: space-around;
+    margin-right: 0px;
+    margin-left: 20px;
+    position: relative;
+    margin-top: 0;
+}
+
+.emoji {
+    font-size: 45px;
+    cursor: pointer;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+input[type="radio"]:checked + .emoji {
+    background-color: #e0e0e0;
+    border-radius: 50%;
+}
+
+.slider {
+    position: relative;
+    height: 10px;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    margin: 30px 70px;
+    width: 580px;
+}
+
+.slider-bar {
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    background-color: #ccc;
+    border-radius: 5px;
+    border-right: 0px;
+}
+
+.slider-thumb {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #666;
+    border-radius: 50%;
+    top: -5px;
+    left: 0%;
+}
+
+.slider-labels {
+    display: flex;
+    justify-content: space-between;
+    font-size: 22px;
+    color: #777;
+    margin-left: 30px;
+    margin-right: 45px;
+    gap: 0px;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-around;
+    margin: 45px 0;
+    align-items: center; 
+}
+
+.audio-btn, .mic-btn, .next-btn {
+    border: none;
+    background: none;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px;
+}
+.audio-btn img, .mic-btn img {
+    width: 50px; 
+    height: 50px; 
+}
+
+.next-btn {
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-size: 25px;
+}
+
+.next-btn:hover {
+    background-color: #45a049;
+}
+
+.accessibility-menu {
+    display: none;
+    position: fixed;
+    top: 50px;
+    right: 50px;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.accessibility-menu button {
+    display: block;
+    margin: 5px 0;
+    padding: 5px 10px;
+    background-color: #8fbc8f;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.accessibility-menu button:hover {
+    background-color: #7ba37b;
+}
+
+body.high-contrast {
+    background-color: black;
+    color: white;
+}
+
+body.grayscale {
+    filter: grayscale(100%);
+}
+
+.accessibility-btn {
+    position: fixed;
+   padding-left: 420px;  
+   top: 170px;
+    
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.accessibility-btn img {
+    width: 60px;
+    height: 60px;
+}
+
+.accessibility-menu button:hover {
+    background-color: #7ba37b;
+}
