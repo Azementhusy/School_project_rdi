@@ -24,32 +24,58 @@ body, html {
     border-radius: 8px;
 }
 
-.avatar {
-    width:150px;
-   
+.accessibility-menu {
+    display: none;
+    position: fixed;
+    top: 50px;
+    right: 50px;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
 }
 
-/* role choose*/
+.optionContainer {
+    display: flex;
+    gap: 1rem;
+}
 
+.option {
+    border: 2px solid transparent; 
+    display: block;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 14rem;
+}
 
-.hover-image {
-    height: auto;
+.option-image {
+}
 
+.option-text {
+    display: block;
+}
+
+.option:hover {
+    outline: 5px dashed green; 
+    border-radius: 20px;
     transition: all 0.1s ease; 
 }
 
-.hover-image:hover {
-    border: 5px dashed green; 
-    border-radius: 20px;
-}
-
 .selected {
-    border: 5px dashed green; 
+    outline: 5px dashed green; 
     border-radius: 20px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    background-color: #cccccc;
 }
-    
-    
+
+#slider {
+    position: relative;
+    top:2rem;
+    width: calc(84%);
+}
 
 .consent-content {
     margin: 20px 0;
@@ -74,14 +100,6 @@ button {
     cursor: pointer;
 }
 
-.inputbar {
-    width: 100%;
-    padding: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    border-radius: 8px;
-    color: #333; 
-}
-
 .questionBar {
      font-size: 16px; 
     display: flex; 
@@ -90,22 +108,6 @@ button {
     box-shadow: 0 0 10px 5px rgba(0,0,0,0.1);
     border-radius: 20px;
 }
-
-.options {
-    display: flex;
-    justify-content: space-around;
-    margin: 10% auto;
-
-}
-
-.option {
-    border: 2px solid transparent; 
-    width: 250px;
-    height:300px;
-    padding: 10px;
-    text-align: center;
-}
-
 
 .back-button {
     position: absolute;
@@ -126,16 +128,12 @@ button {
 
 .next-button {
     background-color: #3b9b2f;
+    position:relative;
+    top:2rem;
 }
 
 button:hover {
     background-color: #03ce47;
-}
-
-
-.avatar:hover {
-
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
 

@@ -17,49 +17,54 @@
       </svg>
     </button>
 
-    <p>Thinking about your physical and mental health over the last 30 days and taking both good and bad days into account.</p>
+    <p class = "text-content" >Thinking about your physical and mental health over the last 30 days and taking both good and bad days into account.</p>
    
-    <div class="header questionBar">
-        <h1>In general, how would you rate your health today? </h1>
+    <div class="questionBar">
+        <h1 class = "text-content">In general, how would you rate your health today? </h1>
     </div>
     
 
-    <div class="container">
+    <button class="accessibility-btn">
+        <img src="3.png" alt="Accessibility">
+    </button>
 
-        <div class="content">
-           
-            <div class="card">
-                <div class="options">
-                    <div class="option" data-value="1">
-                        <img src="./images/1_5.png" alt="Excellent" class="hover-image">
-                        <span>Excellent</span>
-                    </div>
-                    <div class="option" data-value="2">
-                        <img src="./images/2_5.png" alt="Good" class="hover-image">
-                        <span>Good</span>
-                    </div>
-                    <div class="option" data-value="3">
-                        <img src="./images/3_5.png" alt="Fair" class="hover-image">
-                        <span>Fair</span>
-                    </div>
-                    <div class="option" data-value="4">
-                        <img src="./images/4_5.png" alt="Poor" class="hover-image">
-                        <span>Poor</span>
-                    </div>
-                    <div class="option" data-value="5">
-                        <img src="./images/5_5.png" alt="Bad" class="hover-image">
-                        <span>Bad</span>
-                    </div>
-                </div>
-                <input type="range" id="slider" min="1" max="5" value="1">
+    <div class="accessibility-menu" id="accessibility-menu">
+        <button id="increase-font">A+</button>
+        <button id="decrease-font">A-</button>
+        <button id="increase-contrast">Contrast +</button>
+        <button id="decrease-contrast">Contrast -</button>
+        <button id="toggle-grayscale">Greyscale</button>
+        <button id="translate-ga">Gaeilge</button>
+        <button id="translate-es">español</button>
+    </div>
+    
+    <div>
+        <div class="optionContainer">
+            <div class="option" data-value="1">
+                <img src="./images/1_5.png" alt="Excellent" class="option-image">
+                <span class="option-text">Excellent</span>
+            </div>
+            <div class="option" data-value="2">
+                <img src="./images/2_5.png" alt="Good" class="option-image">
+                <span class="option-text">Good</span>
+            </div>
+            <div class="option" data-value="3">
+                <img src="./images/3_5.png" alt="Fair" class="option-image">
+                <span class="option-text"> Fair </span>
+            </div>
+            <div class="option" data-value="4">
+                <img src="./images/4_5.png" alt="Poor" class="option-image">
+                <span class="option-text"> Poor </span>
+            </div>
+            <div class="option" data-value="5">
+                <img src="./images/5_5.png" alt="Bad" class="option-image">
+                <span class="option-text"> Bad </span>
             </div>
         </div>
 
-
+        <input type="range" id="slider" min="1" max="5" value="1">
     </div>
-
-    </div>
-
+   
 
 
 
@@ -67,8 +72,10 @@
 
 
 
-    <button onclick="goToNextPage()">Next</button>
 
+    <button onclick="goToNextPage()" class="next-button">Next</button>
+
+    <script src="index.js" charset="utf-8"></script>
 
     <script>
         function goBack() {
@@ -78,32 +85,6 @@
         function goToNextPage() {
             window.location.href = './Questionarrie./akash.html';
         }
-
-        document.addEventListener('DOMContentLoaded', function () {
-
-            const options = document.querySelectorAll('.option');
-            const slider = document.getElementById('slider');
-
-            options.forEach(option => {
-            option.addEventListener('click', function () {
-            options.forEach(opt => opt.classList.remove('selected'));
-            this.classList.add('selected');
-            slider.value = this.dataset.value;
-             });
-                });
-
-            slider.addEventListener('input', function () {
-           options.forEach(option => option.classList.remove('selected'));
-          options[this.value - 1].classList.add('selected');
-            });
-        });
-
-    document.querySelectorAll('.hover-image').forEach(image => {
-        image.addEventListener('click', function() {
-        this.classList.toggle('selected'); 
-         });
-    });
-
     </script>
 
 </body>

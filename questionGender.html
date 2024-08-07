@@ -21,25 +21,26 @@
         <h1>Are you ... </h1>
     </div>
 
-    <div class="options">
+    <div class="optionContainer">
 
         <div class="option" >
-            <img src="./images/maleOption.png" alt="male" class="hover-image">
+            <img src="./images/maleOption.png" alt="male" class="option-image">
         </div>
 
         <div class="option" >
-            <img src="./images/femaleOption.png" alt="female" class="hover-image">
+            <img src="./images/femaleOption.png" alt="female" class="option-image">
 
         </div>
 
         <div class="option" >
-            <img src="./images/preferOption.png" alt="prefer not to say" class="hover-image">
+            <img src="./images/preferOption.png" alt="prefer not to say" class="option-image">
 
         </div>
     </div>
 
     <button class="next-button" onclick="goToNextPage()">Next</button>
-
+    
+    <script src="index.js" charset="utf-8"></script>
 </body>
 
 
@@ -51,10 +52,4 @@
     function goToNextPage() {
         window.location.href = 'question_1.html';
     }
-
-    document.querySelectorAll('.hover-image').forEach(image => {
-    image.addEventListener('click', function() {
-        this.classList.toggle('selected'); 
-    });
-    });
 </script>

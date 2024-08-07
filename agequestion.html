@@ -23,14 +23,14 @@
     </div>
 
  
-    <div class="options">
+    <div class="optionContainer">
 
         <div class="option" >
-            <img src="./images/yesOption.png" alt="yes" class="hover-image">
+            <img src="./images/yesOption.png" alt="yes" class="option-image">
         </div>
 
         <div class="option" >
-            <img src="./images/noOption.png" alt="no" class="hover-image">
+            <img src="./images/noOption.png" alt="no" class="option-image">
 
         </div>
 
@@ -53,8 +53,8 @@
         window.location.href = 'questionGender.html';
     }
 
-    document.querySelectorAll('.hover-image').forEach(image => {
-    image.addEventListener('click', function() {
+    document.querySelectorAll('.option').forEach(image => {
+        image.addEventListener('click', function() {
         this.classList.toggle('selected'); 
     });
     });

@@ -24,22 +24,22 @@
     </div>
 
 
-    <div class="options">
+    <div class="optionContainer">
 
         <div class="option" >
-            <img src="./images/personself.png" alt="Person Icon" class="hover-image">
-            <p>Person living now or in the past (e.g., rare cancer survivor) with a rare disease</p>
+            <img src="./images/personself.png" alt="Person Icon" class="option-image">
+            <span  class="option-text">Person living now or in the past (e.g., rare cancer survivor) with a rare disease</span>
         </div>
 
         <div class="option" >
-            <img src="./images/assistant.png" alt="Family Icon" class="hover-image">
-            <p>Family member of someone living with a rare disease</p>
+            <img src="./images/assistant.png" alt="Family Icon" class="option-image">
+            <span class="option-text">Family member of someone living with a rare disease</p>
         </div>
     </div>
 
     <button class="next-button" onclick="goToNextPage()">Next</button>
 
-
+    <script src="index.js" charset="utf-8"></script>
 
 </body>
 
@@ -53,11 +53,6 @@
         window.location.href = 'agequestion.html';
     }
 
-    document.querySelectorAll('.hover-image').forEach(image => {
-    image.addEventListener('click', function() {
-        this.classList.toggle('selected'); 
-    });
-});
 
 
 
