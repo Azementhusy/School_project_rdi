@@ -9,6 +9,7 @@ body, html {
     text-align: center; 
     font-family: Arial, sans-serif;
     background: #ffffff; 
+    position:relative;
 }
 
 .logo {
@@ -24,6 +25,21 @@ body, html {
     border-radius: 8px;
 }
 
+.main {
+    color: #03ce47;
+    background-color: #03ce47;
+    height:50%;
+    width:40px;
+    
+}
+
+.question-container {
+    display: flex;
+    gap:2rem;
+    align-items:center;
+   width:100%;
+}
+
 .accessibility-menu {
     display: none;
     position: fixed;
@@ -36,8 +52,12 @@ body, html {
     z-index: 1000;
 }
 
+
+
 .optionContainer {
+    margin-top:1rem;
     display: flex;
+    align-items: center;
     gap: 1rem;
 }
 
@@ -49,6 +69,16 @@ body, html {
     flex-direction: column;
     justify-content: center;
     max-width: 14rem;
+}
+
+.accessibility-btn {
+padding: 1rem;
+margin: 0 10px;
+}
+
+.accessibility-btn img {
+    max-width: 50%;
+    max-height:50%;
 }
 
 .option-image {
@@ -90,7 +120,6 @@ body, html {
 
 button {
     width: 150px;
-    margin-top: 20px;
     padding: 10px 20px;
     font-size: 20px;
     color: white;
@@ -101,29 +130,27 @@ button {
 }
 
 .questionBar {
-     font-size: 16px; 
+    font-size: 16px; 
     display: flex; 
-   margin-bottom:20px;
+    width:100%;
     padding: 20px;
     box-shadow: 0 0 10px 5px rgba(0,0,0,0.1);
     border-radius: 20px;
 }
 
 .back-button {
-    position: absolute;
+ 
     top: 10px; 
     left: 10px; 
-    padding: 8px;
+    padding: 10px;
     display: flex;
-    align-items: center;
-    justify-content: center;
     background-color: #3b9b2f;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    width: 44px;  
-    height: 44px;
+    width: 80px;  
+    height: 80px;
 }
 
 .next-button {

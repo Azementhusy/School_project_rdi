@@ -10,16 +10,34 @@
 </head>
 
 <body>
-    <button class="back-button" onclick="goBack()" aria-label="Go back">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-left">
-          <line x1="19" y1="12" x2="5" y2="12"></line>
-          <polyline points="12 19 5 12 12 5"></polyline>
-      </svg>
-    </button>
 
-    <div class="header questionBar">
-        <h1>Are you ... </h1>
+
+
+    <div class="question-container">
+
+        <button class="back-button" onclick="goBack()" aria-label="Go back">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-left">
+                <line x1="19" y1="12" x2="5" y2="12"></line>
+                <polyline points="12 19 5 12 12 5"></polyline>
+            </svg>
+          </button>
+
+        <div class="questionBar">
+            <h1>Are you ... </h1>
+        </div>
+
+        <button class="accessibility-btn">
+            <img src="./images/accessibility.png" alt="Accessibility">
+        </button>
+
     </div>
+
+    
+    <div class="accessibility-menu" id="accessibility-menu">
+        <button id="increase-font">A+</button>
+        <button id="decrease-font">A-</button>
+    </div>
+
 
     <div class="optionContainer">
 
@@ -39,7 +57,7 @@
     </div>
 
     <button class="next-button" onclick="goToNextPage()">Next</button>
-    
+
     <script src="index.js" charset="utf-8"></script>
 </body>
 

@@ -10,52 +10,57 @@
 </head>
 
 <body>
-    <button class="back-button" onclick="goBack()" aria-label="Go back">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-left">
-          <line x1="19" y1="12" x2="5" y2="12"></line>
-          <polyline points="12 19 5 12 12 5"></polyline>
-      </svg>
-    </button>
 
+    <div class="question-container">
 
-    <div class="header questionBar">
-        <h1>Are you 15 years old, or over?</h1>
+        <button class="back-button" onclick="goBack()" aria-label="Go back">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-left">
+                <line x1="19" y1="12" x2="5" y2="12"></line>
+                <polyline points="12 19 5 12 12 5"></polyline>
+            </svg>
+          </button>
+
+        <div class="questionBar">
+            <h1>Are you 15 years old, or over?</h1>
+        </div>
+
+        <button class="accessibility-btn">
+            <img src="./images/accessibility.png" alt="Accessibility">
+        </button>
+
     </div>
 
+    <div class="accessibility-menu" >
+        <button id="increase-font">A+</button>
+        <button id="decrease-font">A-</button>
+    </div>
  
     <div class="optionContainer">
-
         <div class="option" >
             <img src="./images/yesOption.png" alt="yes" class="option-image">
         </div>
 
         <div class="option" >
             <img src="./images/noOption.png" alt="no" class="option-image">
-
         </div>
-
     </div>
 
     <button class="next-button" onclick="goToNextPage()">Next</button>
 
+    <script src="index.js" charset="utf-8"></script>
 
- </body>
-
-
-
-
- <script>
-    function goBack() {
-      window.location.href = 'userRole.html';
-    }
-
-    function goToNextPage() {
+    <script>
+     function goBack() {
+       window.location.href = 'userRole.html';
+      }
+      function goToNextPage() {
         window.location.href = 'questionGender.html';
-    }
+     }
 
-    document.querySelectorAll('.option').forEach(image => {
+       document.querySelectorAll('.option').forEach(image => {
         image.addEventListener('click', function() {
-        this.classList.toggle('selected'); 
-    });
-    });
-</script>
+            this.classList.toggle('selected'); 
+        });
+        });
+    </script>
+</body>

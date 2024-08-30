@@ -10,34 +10,50 @@
 </head>
 
 <body>
-    <body>
-        <button class="back-button" onclick="goBack()" aria-label="Go back">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-left">
-              <line x1="19" y1="12" x2="5" y2="12"></line>
-              <polyline points="12 19 5 12 12 5"></polyline>
-          </svg>
-        </button>
 
-
-    <div class="card">
-        <h1>Consent sheet</h1>
-        <div class="consent-content">
-            <p>
-                Do you have a rare disease or a rare cancer? <br />
-                Do you have a family member living with a rare disease? <br />
-                How are you or your family member participating in day-to-day activities? <br />
-
-                This survey will take around 10 minutes to complete.  <br />
-                It will help Rare Diseases Ireland, the national alliance for rare disease patient organisations in Ireland to advocate for people living with rare diseases.  <br />
-                The overall survey results will be made publicly available.  <br />
-                Your answers will not be published. Your answers will be kept in secure storage, which only the research team can access.
-
-                If you have any questions, you can contact the Rare Diseases Ireland at advocacy @rdi.ie  <br />
-                By clicking “Next”, you agree to our privacy notice
-            </p>
-        </div>
     
-    </div>
+     
+        <div class="question-container">
+
+            <button class="back-button" onclick="goBack()" aria-label="Go back">
+             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-left">
+                <line x1="19" y1="12" x2="5" y2="12"></line>
+                <polyline points="12 19 5 12 12 5"></polyline>
+              </svg>
+            </button>
+
+            <div class="questionBar">
+                <h1 >Consent sheet </h1>
+            </div>
+
+            <button class="accessibility-btn">
+                <img src="./images/accessibility.png" alt="Accessibility">
+            </button>
+
+        </div>
+       
+
+        <div class="card">
+
+            <div class="consent-content">
+                <p>
+                    Do you have a rare disease or a rare cancer? <br />
+                    Do you have a family member living with a rare disease? <br />
+                    How are you or your family member participating in day-to-day activities? <br />
+    
+                    This survey will take around 10 minutes to complete.  <br />
+                    It will help Rare Diseases Ireland, the national alliance for rare disease patient organisations in Ireland to advocate for people living with rare diseases.  <br />
+                    The overall survey results will be made publicly available.  <br />
+                    Your answers will not be published. Your answers will be kept in secure storage, which only the research team can access.
+    
+                    If you have any questions, you can contact the Rare Diseases Ireland at advocacy @rdi.ie  <br />
+                    By clicking “Next”, you agree to our privacy notice
+                </p>
+            </div>
+
+        </div>
+
+    
 
     <button onclick="goToNextPage()">Next</button>
 

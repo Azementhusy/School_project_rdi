@@ -10,32 +10,31 @@
 </head>
 
 <body>
-    <button class="back-button" onclick="goBack()" aria-label="Go back">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-left">
-          <line x1="19" y1="12" x2="5" y2="12"></line>
-          <polyline points="12 19 5 12 12 5"></polyline>
-      </svg>
-    </button>
-
-    <p class = "text-content" >Thinking about your physical and mental health over the last 30 days and taking both good and bad days into account.</p>
    
-    <div class="questionBar">
-        <h1 class = "text-content">In general, how would you rate your health today? </h1>
-    </div>
+    <p class = "text-content" >Thinking about your physical and mental health over the last 30 days and taking both good and bad days into account.</p>
     
+    <div class="question-container">
 
-    <button class="accessibility-btn">
-        <img src="3.png" alt="Accessibility">
-    </button>
+        <button class="back-button" onclick="goBack()" aria-label="Go back">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-left">
+                <line x1="19" y1="12" x2="5" y2="12"></line>
+                <polyline points="12 19 5 12 12 5"></polyline>
+            </svg>
+        </button>
+
+        <div class="questionBar">
+            <h1 class = "text-content">In general, how would you rate your health today? </h1>
+        </div>
+
+        <button class="accessibility-btn">
+            <img src="./images/accessibility.png" alt="Accessibility">
+        </button>
+
+    </div>
 
     <div class="accessibility-menu" id="accessibility-menu">
         <button id="increase-font">A+</button>
         <button id="decrease-font">A-</button>
-        <button id="increase-contrast">Contrast +</button>
-        <button id="decrease-contrast">Contrast -</button>
-        <button id="toggle-grayscale">Greyscale</button>
-        <button id="translate-ga">Gaeilge</button>
-        <button id="translate-es">español</button>
     </div>
     
     <div>
@@ -64,14 +63,6 @@
 
         <input type="range" id="slider" min="1" max="5" value="1">
     </div>
-   
-
-
-
-
-
-
-
 
     <button onclick="goToNextPage()" class="next-button">Next</button>
 
@@ -81,9 +72,8 @@
         function goBack() {
         window.location.href = 'questionGender.html';
         }
-
         function goToNextPage() {
-            window.location.href = './Questionarrie./akash.html';
+        window.location.href = './Questionarrie./akash.html';
         }
     </script>
 
